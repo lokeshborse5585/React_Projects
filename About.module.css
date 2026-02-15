@@ -1,0 +1,66 @@
+.heroWrapper {
+  width: 100%;
+  padding: 80px 0;
+  background-color:#130f0f;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center; /* Vertical center */
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Left Content Side */
+.contentSide {
+  flex: 1.2;
+  text-align: left;
+}
+
+.mainHeading {
+  font-size: 4rem; /* Bada bold text */
+  font-weight: 800;
+  color: #5d469f; /* Purple/Blue shade as per screen */
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.mainHeading span {
+  color: #e91e63; /* PNB Pink */
+}
+
+.description {
+  font-size: 1.4rem;
+  color: #cbbdbd;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.description u {
+  text-decoration-color: #e91e63;
+  cursor: pointer;
+}
+
+/* Right Image Side */
+.imageSide {
+  flex: 0.8;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.heroImg {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  display: block;
+  /* Agar background remove karke photo daloge toh ekdum professional lagega */
+}
+
+/* Security to avoid copy */
+.heroWrapper {
+  user-select: none;
+  -webkit-user-select: none;
+}

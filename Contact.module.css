@@ -1,0 +1,89 @@
+.contactWrapper {
+  background: #292525;
+  padding-top: 40px;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.thankYouSide {
+  width: 70%;
+}
+
+.mainHeading span {
+  color: #b43d3d;
+}
+
+.infoSide {
+  width: 60%;
+}
+
+.contactCard {
+  background: #b34444;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.infoItem {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* Footer */
+.footerSection {
+  background: #111;
+  color: #d80f0f;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.footerTop {
+  text-align: center;
+}
+
+/* 🔥 Policy Hover */
+.policyWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.policyItem {
+  position: relative;
+  cursor: pointer;
+  font-weight: 600;
+  color: #ffb3b3;
+}
+
+.policyBox {
+  display: none;
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  background: #fff;
+  color: #000;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 13px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.policyItem:hover .policyBox {
+  display: block;
+}
+
+/* Footer Bottom */
+.footerBottom {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 14px;
+}

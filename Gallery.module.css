@@ -1,0 +1,51 @@
+.galleryWrapper {
+  padding: 40px 10px;
+  background-color: #130f0f;
+  text-align: center;
+}
+
+.galleryTitle {
+  font-size: 2rem;
+  color: #e91e63;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.galleryTitle span {
+  color: #00bcd4;
+}
+
+.titleLine {
+  height: 4px;
+  width: 50px;
+  background: linear-gradient(to right, #e91e63, #00bcd4);
+  margin: 0 auto 30px;
+}
+
+/* 5 Columns Layout - Fixed for all screens */
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 8px; /* Mobile ke liye gap thoda kam kar diya hai */
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.photoItem {
+  aspect-ratio: 1 / 1; /* Square photos taaki grid tight dikhe */
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: #f0f0f0;
+}
+
+.shopImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.photoItem:hover .shopImg {
+  transform: scale(1.1);
+}

@@ -1,0 +1,20 @@
+.overlay {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; z-index: 999;
+}
+.card {
+  background: #111; padding: 40px; border-radius: 15px; border: 1px solid #b43d3d;
+  width: 350px; text-align: center; color: white;
+}
+.brand { color: #b43d3d; margin-bottom: 20px; }
+.input {
+  width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 5px;
+  border: 1px solid #333; background: #222; color: white;
+}
+.btn {
+  width: 100%; padding: 12px; background: #b43d3d; border: none; color: white;
+  border-radius: 5px; cursor: pointer; font-weight: bold;
+}
+.toggleText { font-size: 13px; margin-top: 15px; color: #888; }
+.toggleText span { color: #b43d3d; cursor: pointer; font-weight: bold; }
+.backBtn { background: none; border: none; color: #555; margin-top: 10px; cursor: pointer; }

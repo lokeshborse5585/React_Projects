@@ -1,0 +1,201 @@
+
+
+/* Top Bar */
+.topBar {
+  background: #130f0f;
+  color: #fff;
+  padding: 8px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+}
+
+.contact span {
+  margin-right: 50px;
+
+}
+
+
+
+.enquireBtn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.enquireBtn:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  width: 97%;
+  margin: 5px auto;
+  padding: 14px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  background: rgba(216, 162, 162, 0.9);
+  backdrop-filter: blur(6px);
+
+
+  border-radius: 50px;
+
+ 
+  border: 3px solid rgb(115, 214, 214);
+  box-shadow: 0 40px 200px rgba(0, 0, 0, 0.08);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.servicesSection, .gallerySection, .aboutSection, .contactSection {
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.logoBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoBox img {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+}
+
+.logoText h3 {
+  margin: 0;
+  font-size: 25px;
+  border-color: aqua;
+  letter-spacing: 2px;
+}
+
+.logoText span {
+  font-size: 12px;
+  color: #444;
+  letter-spacing: 1px;
+}
+
+/* Nav Links */
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.navLinks li {
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+/* Hover Effect */
+.navLinks li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #000;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s ease;
+}
+
+
+
+/* Hero */
+.hero {
+ height: 78vh;
+background-image: url("https://images.pexels.com/photos/705255/pexels-photo-705255.jpeg");
+background-size: cover;          /* Image poore area me fit ho jaye */
+background-position: center;     /* Center me rahe */
+background-repeat: no-repeat;    /* Repeat na ho */
+position: relative;
+color: #139dcb;
+}
+/* Statment logic */
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+}
+
+.overlay h1 {
+  color: #fff;
+  font-size: 48px;
+  max-width: 700px;
+  line-height: 1.2;
+}
+/* Book button logic */
+.bookBtn {
+  margin-top: 25px;
+  width: 160px;
+  padding: 12px 0;               
+  border: 2px solid #00bfff;     
+  border-radius: 25px;            
+  background: rgba(255, 255, 255, 0.9); 
+  color: #020101;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;      /* hover animation */
+}
+
+
+.bookBtn:hover {
+  background: #12adb6;    
+  color: #120202;            /* text white on hover */
+  transform: scale(1.55); /* slight zoom */
+}
+
+/* drop down logic */
+
+.dropdown {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background:  #12adb6;
+  list-style: none;
+  padding: 5px 0;
+  width: 150px;
+  border: 2px solid rgb(21, 22, 22);
+  border-radius: 20px;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+.dropdown li {
+  padding: 8px 0;
+  transition: background 0.3s;
+}
+
+.dropdown li:hover {
+  background-color: rgb(23, 19, 19);
+opacity: 10 b n6; /* element aur content dono transparent ho jayenge */
+font-weight: 400;
+cursor: pointer;
+}
